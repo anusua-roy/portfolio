@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    margin: 0;
+}
+header, section, footer {
+    text-align: center;
+    font-size: 25px;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+}
+section, footer {
+    margin: 0 10%;
+    padding-top: 5%;
+    width: 80%;
+}
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav > a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+section > img {
+    border-radius: 50%;
+    width: 25%;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 5%;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: green;
+    top: 0;
+    bottom: 0;
+    left: 1.5%;
+    margin-left: -3px;
+    z-index: -1;
+}
+/* Container around content */
+.container {
+    
+    padding: 1% 2%;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0%;
+    background-color: white;
+    border: 5px solid green;
+    top: 5%;
+    border-radius: 50%;
+    z-index: 0;
+}
+  
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 8%;
+    width: 0;
+    z-index: 1;
+    left: 8%;
+    border: medium solid green;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent green transparent transparent;
+}
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
