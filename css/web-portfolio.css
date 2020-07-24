@@ -96,7 +96,7 @@ section > img {
     text-align: left;
 }
 
-#skills > div > img {
+.skills > div > img {
     display: inline-block;
     margin: 2%;
     width: 10%;
