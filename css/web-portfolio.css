@@ -69,7 +69,7 @@ section > img {
     padding: 1% 2%;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 80%;
 }
   
 /* The circles on the timeline */
@@ -92,8 +92,6 @@ section > img {
 }
 /* The actual content */
 .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
+    padding: 2% 10%;
+    text-align: left;
 }
