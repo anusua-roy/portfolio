@@ -60,13 +60,12 @@ section > img {
     background-color: green;
     top: 0;
     bottom: 0;
-    left: 1.5%;
+    left: 18px;
     margin-left: -3px;
     z-index: -1;
 }
 /* Container around content */
 .container {
-    
     padding: 1% 2%;
     position: relative;
     background-color: inherit;
@@ -79,10 +78,10 @@ section > img {
     position: absolute;
     width: 25px;
     height: 25px;
-    left: 0%;
+    left: 0px;
     background-color: white;
     border: 5px solid green;
-    top: 5%;
+    top: 10px;
     border-radius: 50%;
     z-index: 0;
 }
@@ -90,19 +89,6 @@ section > img {
 /* Place the container to the left */
 .left {
     left: 0;
-}
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 8%;
-    width: 0;
-    z-index: 1;
-    left: 8%;
-    border: medium solid green;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent green transparent transparent;
 }
 /* The actual content */
 .content {
