@@ -9,10 +9,13 @@ header, section, footer {
 h2 {
     font-family: 'Pacifico', cursive;
 }
-section, footer {
+section {
     margin: 0 10%;
-    padding-top: 5%;
+    padding-top: 30%;
     width: 80%;
+}
+header > section {
+    padding-top: 35%;
 }
 nav {
     overflow: hidden;
@@ -23,25 +26,28 @@ nav {
     z-index: 1;
 }
 nav > a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 1% 2%;
     text-decoration: none;
     font-size: 80%;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-nav a:hover {
-    background: #ddd;
+.noColor {
+    background-color: #333;
+    color: #f2f2f2;
+}
+.active {
+    background-color: #ddd;
     color: black;
 }
-
 section > img {
     border-radius: 50%;
-    width: 25%;
+    width: 45%;
 }
-* {
+#about {
     box-sizing: border-box;
   }
   
@@ -96,8 +102,74 @@ section > img {
     text-align: left;
 }
 
-.skills > div > img {
+#skills > div > img {
     display: inline-block;
     margin: 2%;
+    width: 25%;
+}
+.recommendations > img {
+    margin: 1%;
+    width: 35%;
+}
+footer {
+    padding: 5%;
+    padding-top: 30%;
+    background-color: #333;
+    color: white;
+}
+footer > div {
+    display: inline-block;
+    margin: 1%;
+    padding: 1%;
+    width: 80%;
+}
+footer > div > p > a {
+    color: none;
+    text-decoration: none;
+}
+.icon {
+    margin: 1%;
+    padding: 1%;
     width: 10%;
+}
+
+@media screen and (min-width:992px){
+    nav > a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1% 2%;
+        text-decoration: none;
+        font-size: 80%;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    section {
+        margin: 0 10%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        width: 80%;
+    }
+    header > section {
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+    }
+    section > img {
+        border-radius: 50%;
+        width: 25%;
+    }
+    #skills > div > img {
+        display: inline-block;
+        margin: 2%;
+        width: 10%;
+    }
+    .recommendations > img {
+        margin: 1%;
+        width: 15%;
+    }
+    footer > div {
+        display: inline-block;
+        width: 40%;
+    }
 }
