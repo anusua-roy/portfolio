@@ -12,14 +12,14 @@
 <body>
     <header id="home">
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">Timeline</a>
-            <a href="#skills">Skills</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact Me</a>
+            <a class="active" href="#home" onclick="change(this)">Home</a>
+            <a href="#about" onclick="change(this)">Timeline</a>
+            <a href="#skills" onclick="change(this)">Skills</a>
+            <a href="#interests" onclick="change(this)">Interests</a>
+            <a href="#contact" onclick="change(this)">Contact Me</a>
         </nav>
         <section>
-            <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t31.0-8/14570802_703161673175110_9031669030362085815_o.jpg?_nc_cat=101&_nc_sid=174925&_nc_ohc=KNG1Ym0-QlgAX_F8wEw&_nc_ht=scontent.fccu3-1.fna&oh=360e81697cd7caec8863cd795355e6cb&oe=5F4050E9">
+            <img src="https://scontent.fccu7-1.fna.fbcdn.net/v/t1.0-9/26166059_970830099741598_6294996536568624084_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=GxRqsdQ_kJYAX99SMNi&_nc_ht=scontent.fccu7-1.fna&oh=27f6e607dc0d33f0216dcd8d878316c2&oe=5F3F7DD2">
             <h2>I'm Anusua.</h2>
             <p>An aspiring Full Stack Developer and Software Developer, currently residing in Kolkata, IN. I am pursuing  a Master's in Computer Application from MAKAUT, and my primary focus and inspiration for my studies is Web Development.</p>
             <p>I'm a nerd ironically whose favourite pass time is to Netflix and chill.</p>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills">
         <h2>Skills</h2>
         <div>
             <img src="https://www.techbaz.org/Course/img/c-logo.png">
@@ -78,8 +78,56 @@
             <img src="https://th.bing.com/th/id/OIP.W6so-8oWO_oSuOoeCz7gxgHaHa?pid=Api&rs=1">
         </div>
     </section>
-    <section id="interests">Interests</section>
-    <footer id="contact">Footer</footer>
+    <section id="interests">
+        <h2>Interests</h2>
+        <div class="recommendations">
+            Books<br>
+            <img src="https://oflifeandlies.files.wordpress.com/2013/04/tie-in-movie-edition-book-cover-pride-and-prejudice-23974255-310-475.jpg">
+            <img src="http://onlinestore.dcbooks.com/uploaded_files/books/bk_9780552161268.jpg">
+            <img src="https://leadinglight.files.wordpress.com/2010/01/kane-and-abel.jpeg">
+            <img src="http://litstack.com/wp-content/uploads/2014/06/The-Fault-in-Our-Stars-John-Green.jpg">
+        </div>
+        <div class="recommendations">
+            Movies<br>
+            <img src="https://fanart.tv/fanart/movies/278/movieposter/the-shawshank-redemption-5223c8231afe1.jpg">
+            <img src="https://th.bing.com/th/id/OIP.U5p_bK8axaEb9UzDSHvNjQHaLH?pid=Api&rs=1">
+            <img src="http://illuminatiwatcher.com/wp-content/uploads/2015/01/IlluminatiWatcherDotCom-Interstellar-movie-poster-spiral.jpg">
+            <img src="https://fanart.tv/fanart/movies/509/movieposter/notting-hill-52230f7e3aa39.jpg">
+        </div>
+        <div class="recommendations">
+            TV Series<br>
+            <img src="https://i.ebayimg.com/images/i/401185690009-0-1/s-l1000.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg">
+            <img src="http://3.bp.blogspot.com/-phP9pPZ5leM/UM-LPcbRaZI/AAAAAAACM2o/NZrUf-M9gb0/s1600/sherlock_poster1.jpg">
+            <img src="https://www.uwatchfree.sx/wp-content/uploads/2019/05/Kota-Factory-2019-Season-1-Complete.jpg">
+        </div>
+    </section>
+    <footer id="contact">
+        <div>
+            <h2>About this website</h2>
+            <p>This is a simple web portfolio made for educational purposes.</p>
+        </div>
+        <div>
+            <h2>Contact Me</h2>
+            <p>
+                <a href="mailto:anusua.roy05@gmail.com" target="_blank">
+                    <img class="icon" src="https://img.icons8.com/color/1600/gmail.png">
+                </a>
+                <a href="https://www.linkedin.com/in/anusua-roy-496733184/" target="_blank">
+                    <img class="icon" src="https://image.flaticon.com/icons/png/512/174/174857.png">
+                </a>
+                <a href="https://www.facebook.com/anusua20" target="_blank">
+                    <img class="icon" src="https://positivetransitioning.org/wp-content/uploads/2017/07/ICONCRAZE-COM-Facebook-Icon-PNG.png">
+                </a>
+                <a href="https://www.instagram.com/_the.moo.point_/" target="_blank">
+                    <img class="icon" src="https://cdn.pixelprivacy.com/wp-content/uploads/2018/02/Instagram-Icon.png">
+                </a>
+                <a href="https://github.com/anusua-roy" target="_blank">
+                    <img class="icon" src="https://image.flaticon.com/icons/png/512/25/25231.png">
+                </a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
