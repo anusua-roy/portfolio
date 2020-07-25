@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/* mobile first approach is used, tablet min width is 600px, and desktop min width is 992px*/
+/* mobile first approach is used and desktop min width is 992px*/
 body {
     margin: 0;
+    background-color: #ddd;
 }
 header, section, footer {
     text-align: center;
@@ -18,6 +19,27 @@ section {
 header > section {
     padding-top: 35%;
 }
+#dropdown {
+    padding-top: 10%;
+    display: none;
+    background-color: #333;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#dropdown > a {
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
 nav {
     overflow: hidden;
     background-color: #333;
@@ -26,12 +48,22 @@ nav {
     width: 100%;
     z-index: 1;
 }
-nav > a {
+nav > a, nav > button {
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 1% 2%;
     text-decoration: none;
+    font-size: 80%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav > button {
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 1% 2%;
     font-size: 80%;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -44,16 +76,25 @@ nav > a {
     background-color: #ddd;
     color: black;
 }
+.nodColor {
+    background-color: #333;
+    color: #f2f2f2;
+}
+.dactive {
+    background-color: #ddd;
+    color: black;
+}
+.link {
+    display: none;
+}
 section > img {
     border-radius: 50%;
     width: 45%;
 }
 #about {
     box-sizing: border-box;
-  }
-  
-  
-/* The actual timeline (the vertical ruler) */
+}
+ /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
     width: 80%;
@@ -137,52 +178,36 @@ footer > div > div > p > a {
     width: 10%;
 }
 
-@media screen and (min-width:600px) {
-    
-
-}
-
 @media screen and (min-width:992px){
     nav > a {
         float: left;
+    }
+    nav > button, #dropdown {
+        display: none;
+    }
+    .link {
         display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 1% 2%;
-        text-decoration: none;
-        font-size: 80%;
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
     }
     section {
-        margin: 0 10%;
         padding-top: 2.5%;
         padding-bottom: 2.5%;
-        width: 80%;
     }
     header > section {
         padding-top: 5%;
         padding-bottom: 2.5%;
     }
     section > img {
-        border-radius: 50%;
         width: 25%;
     }
     #skills > div > img {
         display: inline-block;
-        margin: 2%;
         width: 10%;
     }
     .recommendations > img {
-        margin: 1%;
         width: 15%;
     }
     footer {
         padding-top: 0%;
-    }
-    footer > div {
-        width: 100%;
-        background-color: #333;
     }
     footer > div > div {
         display: inline-block;
