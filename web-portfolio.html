@@ -12,11 +12,19 @@
 <body>
     <header id="home">
         <nav>
-            <a class="active" href="#home" onclick="change(this)">Home</a>
-            <a href="#about" onclick="change(this)">Timeline</a>
-            <a href="#skills" onclick="change(this)">Skills</a>
-            <a href="#interests" onclick="change(this)">Interests</a>
-            <a href="#contact" onclick="change(this)">Contact Me</a>
+            <a class="active link" href="#home" onclick="change(this)">Home</a>
+            <a class="link" href="#about" onclick="change(this)">Timeline</a>
+            <a class="link" href="#skills" onclick="change(this)">Skills</a>
+            <a class="link" href="#interests" onclick="change(this)">Interests</a>
+            <a class="link" href="#contact" onclick="change(this)">Contact Me</a>
+            <button onclick="openMenu()">Menu</button>
+            <div id="dropdown">
+                <a class="dactive" href="#home" onclick="dchange(this)">Home</a>
+                <a href="#about" onclick="dchange(this)">Timeline</a>
+                <a href="#skills" onclick="dchange(this)">Skills</a>
+                <a href="#interests" onclick="dchange(this)">Interests</a>
+                <a href="#contact" onclick="dchange(this)">Contact Me</a>
+            </div>
         </nav>
         <section>
             <img src="https://scontent.fccu7-1.fna.fbcdn.net/v/t1.0-9/26166059_970830099741598_6294996536568624084_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=GxRqsdQ_kJYAX99SMNi&_nc_ht=scontent.fccu7-1.fna&oh=27f6e607dc0d33f0216dcd8d878316c2&oe=5F3F7DD2">
