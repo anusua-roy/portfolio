@@ -1,26 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/* mobile first approach is used and desktop min width is 992px*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 body {
     margin: 0;
     background-color: #ddd;
 }
 header, section, footer {
     text-align: center;
-    font-size: 25px;
 }
-h2 {
-    font-family: 'Pacifico', cursive;
+section > div > h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 300%;
+}
+section > h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 300%;
 }
 section {
     margin: 0 10%;
-    padding-top: 30%;
+    padding-top: 15%;
     width: 80%;
+    font-size: 200%;
 }
-header > section {
-    padding-top: 35%;
+header > section > div > p {
+    font-family: 'Caveat', cursive;
+    font-size: 200%;
+}
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+}
+nav > a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: 'Caveat', cursive;
 }
 #dropdown {
-    padding-top: 10%;
+    padding-top: 15%;
     display: none;
     background-color: #333;
     width: 50%;
@@ -32,41 +56,12 @@ header > section {
 }
 #dropdown > a {
     display: block;
-    color: #f2f2f2;
     text-align: left;
     padding: 1% 2%;
     text-decoration: none;
-    font-size: 80%;
+    font-size: 350%;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-nav {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-nav > a, nav > button {
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1% 2%;
-    text-decoration: none;
-    font-size: 80%;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-nav > button {
-    border: none;
-    outline: none;
-    background-color: #333;
-    color: #f2f2f2;
-    padding: 1% 2%;
-    font-size: 80%;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Caveat', cursive;
 }
 .noColor {
     background-color: #333;
@@ -74,7 +69,7 @@ nav > button {
 }
 .active {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
 .nodColor {
     background-color: #333;
@@ -82,14 +77,14 @@ nav > button {
 }
 .dactive {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
 .link {
     display: none;
 }
 section > img {
     border-radius: 50%;
-    width: 45%;
+    width: 60%;
 }
 #about {
     box-sizing: border-box;
@@ -97,7 +92,7 @@ section > img {
  /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 5%;
 }
 /* The actual timeline (the vertical ruler) */
@@ -105,7 +100,7 @@ section > img {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: green;
+    background-color: #008000;
     top: 0;
     bottom: 0;
     left: 18px;
@@ -127,9 +122,9 @@ section > img {
     width: 25px;
     height: 25px;
     left: 0px;
-    background-color: white;
-    border: 5px solid green;
-    top: 10px;
+    background-color: #ffffff;
+    border: 5px solid #008000;
+    top: 20px;
     border-radius: 50%;
     z-index: 0;
 }
@@ -140,14 +135,21 @@ section > img {
 }
 /* The actual content */
 .content {
+    font-family: 'Caveat', cursive;
     padding: 2% 10%;
+    width: 100%;
     text-align: left;
+    font-size: 200%;
 }
 
 #skills > div > img {
     display: inline-block;
     margin: 2%;
     width: 25%;
+}
+.recommendations {
+    font-family: 'Caveat', cursive;
+    font-size: 200%;
 }
 .recommendations > img {
     margin: 1%;
@@ -167,50 +169,100 @@ footer > div > div {
     margin: 1%;
     padding: 1%;
     width: 80%;
+    font-family: 'Caveat', cursive;
+}
+footer > div > div {
+    font-size: 300%;
+}
+footer > div > div > h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 200%;
 }
 footer > div > div > p > a {
-    color: none;
+    color: transparent;
     text-decoration: none;
 }
 .icon {
-    margin: 1%;
-    padding: 1%;
+    padding: 2%;
     width: 10%;
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-device-width:768px){
     nav > a {
         float: left;
+        font-size: 250%;
     }
-    nav > button, #dropdown {
+    nav > img, #dropdown {
         display: none;
     }
     .link {
         display: block;
     }
-    section {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-    }
     header > section {
+        padding-top: 10%;
+    }
+    section > div {
         padding-top: 5%;
-        padding-bottom: 2.5%;
+        font-size: 80%;
+    }
+    header > section > div {
+        font-size: 80%;
     }
     section > img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-device-width:992px) {
+    nav > a {
+        font-size: 150%;
+    }
+    section {
+        padding-top: 1%;
+    }
+    header > section > img {
         width: 25%;
+        display: inline-block;
+        float: left;
+    }
+    header > section > div {
+        padding-top: 1%;
+        display: inline-block;
+        width: 70%;
+        font-size: 50%;
+    }
+    section > h2 {
+        font-size: 200%;
+    }
+    header > section > div > p {
+        font-size: 150%;
+    }
+    .content {
+        font-size: 100%;
     }
     #skills > div > img {
         display: inline-block;
+        margin: 2%;
         width: 10%;
     }
+    .recommendations {
+        font-size: 100%;
+    }
     .recommendations > img {
+        margin: 1%;
         width: 15%;
     }
     footer {
-        padding-top: 0%;
+        padding-top: 1%;
     }
     footer > div > div {
         display: inline-block;
-        width: 40%;
+        width: 45%;
+    }
+    footer > div > div > h2 {
+        font-size: 100%;
+    }
+    footer > div > div > p {
+        font-size: 80%;
     }
 }
