@@ -16,7 +16,7 @@ function dchange(obj) {
 
 function openMenu() {
     var x = document.getElementById('dropdown');
-    if (x.style.display === 'none') {
+    if (x.style.display === 'none'|| x.style.display == '') {
         x.style.display = 'block';
     }
     else {
