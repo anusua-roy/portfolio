@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/1402/PNG/512/alphabet_96900.png" />
     <title>Anusua Roy</title>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/web-portfolio.css" />
     <script src="js/web-portfolio.js"></script>
@@ -12,18 +12,18 @@
 <body>
     <header id="home">
         <nav>
-            <a class="active link" href="#home" onclick="change(this)">Home</a>
-            <a class="link" href="#about" onclick="change(this)">Timeline</a>
-            <a class="link" href="#skills" onclick="change(this)">Skills</a>
-            <a class="link" href="#interests" onclick="change(this)">Interests</a>
-            <a class="link" href="#contact" onclick="change(this)">Contact Me</a>
+            <a class="link" href="#home">Home</a>
+            <a class="link" href="#about">Timeline</a>
+            <a class="link" href="#skills">Skills</a>
+            <a class="link" href="#interests">Interests</a>
+            <a class="link" href="#contact">Contact Me</a>
             <img class="icon" src="http://www.tophatchiswick.co.uk/images/mob-menu.png" alt="menu icon" onclick="openMenu()">
             <div id="dropdown">
-                <a class="dactive" href="#home" onclick="dchange(this)">Home</a>
-                <a class="nodColor" href="#about" onclick="dchange(this)">Timeline</a>
-                <a class="nodColor" href="#skills" onclick="dchange(this)">Skills</a>
-                <a class="nodColor" href="#interests" onclick="dchange(this)">Interests</a>
-                <a class="nodColor" href="#contact" onclick="dchange(this)">Contact Me</a>
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#about" onclick="closeMenu()">Timeline</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#interests" onclick="closeMenu()">Interests</a>
+                <a href="#contact" onclick="closeMenu()">Contact Me</a>
             </div>
         </nav>
         <section>
@@ -77,46 +77,96 @@
     <section id="skills">
         <h2>Skills</h2>
         <div>
+            <h3>Languages : English, Bengali, Hindi</h3>
+            <h3>Programming Languages</h3>
             <img src="https://www.techbaz.org/Course/img/c-logo.png" alt="c">
             <img src="https://codehub101.files.wordpress.com/2018/12/73be7-cpprender.png" alt="cpp">
-            <img src="https://th.bing.com/th/id/OIP.xePC9eCXE-p7xCpCMUAaFgHaHa?pid=Api&rs=1" alt="python">
+            <img src="https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png" alt="python">
             <img src="https://www.wrherbert.com/images/icons/icon_java.png" alt="java">
+            <img src="https://coherent-labs.com/content/uploads/2015/04/JS6_Logo.png" alt="javascript">
+            <h3>Front End Designing</h3>
             <img src="http://2.bp.blogspot.com/-0SCCtRkMqvE/UO-jqGpKA8I/AAAAAAAAGuk/MC8YMpdRP4o/s1600/HTML5_Logo_512.png" alt="html5">
             <img src="https://www.mxp.de/wp-content/uploads/2017/09/css-logo.png" alt="css3">
-            <img src="https://coherent-labs.com/content/uploads/2015/04/JS6_Logo.png" alt="javascript">
+            <h3>Framework</h3>
             <img src="http://www.developersfeed.com/wp-content/uploads/2016/02/bootstrap-logo.png" alt="bootstrap">
-            <img src="https://th.bing.com/th/id/OIP.W6so-8oWO_oSuOoeCz7gxgHaHa?pid=Api&rs=1" alt="django">
+            <img src="https://cdn.iconscout.com/icon/free/png-128/django-1-282754.png" alt="django">
+            <h3>Databases</h3>
+            <img src="https://maxcdn.icons8.com/Share/icon/color/Logos/oracle_logo1600.png" alt="oracle">
+            <img src="http://sqlbackupandftp.com/blog/wp-content/uploads/2015/01/mysql-logo_2800x2800_pixels1-1024x1024.png" alt="mysql">
+            <img src="https://belajarphp.net/wp-content/uploads/2018/12/sqlite_logo-300x300.png" alt="sqlite">
+            <h3>Operating System</h3>
+            <img src="http://pngimg.com/uploads/windows_logos/windows_logos_PNG31.png" alt="windows">
+            <img src="https://www.androidcentral.com/sites/androidcentral.com/files/topic_images/2014/ubuntu_logo.png" alt="ubuntu">
         </div>
     </section>
     <section id="interests">
         <h2>Interests</h2>
         <div class="recommendations">
-            Books<br>
-            <img src="https://oflifeandlies.files.wordpress.com/2013/04/tie-in-movie-edition-book-cover-pride-and-prejudice-23974255-310-475.jpg" alt="pride and prejudice">
-            <img src="http://onlinestore.dcbooks.com/uploaded_files/books/bk_9780552161268.jpg" alt="angels and demons">
-            <img src="https://leadinglight.files.wordpress.com/2010/01/kane-and-abel.jpeg" alt="kane and abel">
-            <img src="http://litstack.com/wp-content/uploads/2014/06/The-Fault-in-Our-Stars-John-Green.jpg" alt="the fault in our stars">
+            <h3>Books</h3>
+            <p>Here are a list of my few favourites, you can click the image to see reviews on 
+                <a href="https://www.goodreads.com/" target="_blank">Goodreads.</a>
+            </p>
+            <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice" target="_blank">
+                <img src="https://oflifeandlies.files.wordpress.com/2013/04/tie-in-movie-edition-book-cover-pride-and-prejudice-23974255-310-475.jpg" alt="pride and prejudice">
+            </a>
+            <a href="https://www.goodreads.com/book/show/1953.A_Tale_of_Two_Cities" target="_blank">
+                <img src="https://images.gr-assets.com/books/1344922523l/1953.jpg" alt="tale of two cities">
+            </a>
+            <a href="https://www.goodreads.com/book/show/960.Angels_Demons" target="_blank">
+                <img src="http://onlinestore.dcbooks.com/uploaded_files/books/bk_9780552161268.jpg" alt="angels and demons">
+            </a>
+            <a href="https://www.goodreads.com/book/show/78983.Kane_and_Abel" target="_blank">
+                <img src="https://leadinglight.files.wordpress.com/2010/01/kane-and-abel.jpeg" alt="kane and abel">
+            </a>
+            <a href="https://www.goodreads.com/book/show/22628.The_Perks_of_Being_a_Wallflower" target="_blank">
+                <img src="http://d28hgpri8am2if.cloudfront.net/book_images/cvr9781451696202_9781451696202_hr.jpg" alt="perks of being a wallflower">
+            </a>
+            <a href="https://www.goodreads.com/book/show/1252043.The_Witch_of_Portobello" target="_blank">
+                <img src="https://purplebooky.files.wordpress.com/2012/07/the-witch-of-portobello.jpg" alt="the witch of portebello">
+            </a>
+            <a href="https://www.goodreads.com/book/show/10210.Jane_Eyre" target="_blank">
+                <img src="http://www.thesqueee.co.uk/wp-content/uploads/2011/09/jepuffin1.jpg" alt="jane eyre">
+            </a>
+            <a href="https://www.goodreads.com/book/show/11870085-the-fault-in-our-stars" target="_blank">
+                <img src="http://litstack.com/wp-content/uploads/2014/06/The-Fault-in-Our-Stars-John-Green.jpg" alt="the fault in our stars">
+            </a>
         </div>
         <div class="recommendations">
-            Movies<br>
-            <img src="https://fanart.tv/fanart/movies/278/movieposter/the-shawshank-redemption-5223c8231afe1.jpg" alt="shawshank redemption">
-            <img src="https://th.bing.com/th/id/OIP.U5p_bK8axaEb9UzDSHvNjQHaLH?pid=Api&rs=1" alt="forrest gump">
-            <img src="http://illuminatiwatcher.com/wp-content/uploads/2015/01/IlluminatiWatcherDotCom-Interstellar-movie-poster-spiral.jpg" alt="interstellar">
-            <img src="https://fanart.tv/fanart/movies/509/movieposter/notting-hill-52230f7e3aa39.jpg" alt="notting hill">
-        </div>
-        <div class="recommendations">
-            TV Series<br>
-            <img src="https://i.ebayimg.com/images/i/401185690009-0-1/s-l1000.jpg" alt="friends">
-            <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg" alt="chernobyl">
-            <img src="http://3.bp.blogspot.com/-phP9pPZ5leM/UM-LPcbRaZI/AAAAAAACM2o/NZrUf-M9gb0/s1600/sherlock_poster1.jpg" alt="sherlock">
-            <img src="https://ae01.alicdn.com/kf/H34cf44b7734d410fad37f9acef897778n/Art-Print-Dark-Season-2-New-Season-TV-Series-2019-Light-Canvas-Poster-Wall-Stickers-Decor.jpg" alt="dark">
+            <h3>Movies &amp; TV Series</h3>
+            <p>Here are a list of my few favourites, you can click the image to see reviews on 
+                <a href="https://www.imdb.com/" target="_blank">IMDb.</a>
+            </p>
+            <a href="https://www.imdb.com/title/tt0111161/" target="_blank">
+                <img src="https://mylifeoutsidethebubble.files.wordpress.com/2015/01/the-shawshank-redemption-movie-poster-1994-1020260139.jpg" alt="shawshank redemption">
+            </a>
+            <a href="https://www.imdb.com/title/tt0108778/" target="_blank">
+                <img src="http://i.ebayimg.com/images/i/121348587369-0-1/s-l1000.jpg" alt="friends">
+            </a>
+            <a href="https://www.imdb.com/title/tt0109830/" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.U5p_bK8axaEb9UzDSHvNjQHaLH?pid=Api&rs=1" alt="forrest gump">
+            </a>
+            <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
+                <img src="http://illuminatiwatcher.com/wp-content/uploads/2015/01/IlluminatiWatcherDotCom-Interstellar-movie-poster-spiral.jpg" alt="interstellar">
+            </a>
+            <a href="https://www.imdb.com/title/tt0125439/" target="_blank">
+                <img src="https://meansheets.files.wordpress.com/2011/10/notting-hill-movie-poster.jpg" alt="notting hill">
+            </a>
+            <a href="https://www.imdb.com/title/tt7366338/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg" alt="chernobyl">
+            </a>
+            <a href="https://www.imdb.com/title/tt1475582/" target="_blank">
+                <img src="http://2.bp.blogspot.com/-pPrGk6hwp1I/UM-RNceA9eI/AAAAAAACNas/7soXCoZSCb4/s1600/sherlock_poster5.jpg" alt="sherlock">
+            </a>
+            <a href="https://www.imdb.com/title/tt5753856/" target="_blank">
+                <img src="https://ae01.alicdn.com/kf/H34cf44b7734d410fad37f9acef897778n/Art-Print-Dark-Season-2-New-Season-TV-Series-2019-Light-Canvas-Poster-Wall-Stickers-Decor.jpg" alt="dark">
+            </a>
         </div>
     </section>
     <footer id="contact">
         <div>
             <div>
-                <h2>About this website</h2>
-                <p>This is a simple web portfolio made for educational purposes.</p>
+                <h2>About  website</h2>
+                <p> is a simple web portfolio made for educational purposes.</p>
             </div>
             <div>
                 <h2>Contact Me</h2>
