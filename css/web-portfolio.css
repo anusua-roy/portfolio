@@ -10,6 +10,10 @@ section > div > h2 {
     font-family: 'Caveat', cursive;
     font-size: 300%;
 }
+section > div > h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 250%;
+}
 section > h2 {
     font-family: 'Caveat', cursive;
     font-size: 300%;
@@ -60,22 +64,11 @@ nav > a {
     padding: 1% 2%;
     text-decoration: none;
     font-size: 350%;
+    color: #f2f2f2;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
-.noColor {
-    background-color: #333;
-    color: #f2f2f2;
-}
-.active {
-    background-color: #ddd;
-    color: #000000;
-}
-.nodColor {
-    background-color: #333;
-    color: #f2f2f2;
-}
-.dactive {
+nav > a:hover, #dropdown > a:hover {
     background-color: #ddd;
     color: #000000;
 }
@@ -147,11 +140,16 @@ section > img {
     margin: 2%;
     width: 25%;
 }
-.recommendations {
+.recommendations p {
     font-family: 'Caveat', cursive;
     font-size: 200%;
 }
-.recommendations > img {
+.recommendations a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.recommendations img {
     margin: 1%;
     width: 35%;
 }
@@ -222,8 +220,8 @@ footer > div > div > p > a {
     }
     header > section > img {
         width: 25%;
-        display: inline-block;
         float: left;
+        display: inline-block;
     }
     header > section > div {
         padding-top: 1%;
@@ -233,6 +231,9 @@ footer > div > div > p > a {
     }
     section > h2 {
         font-size: 200%;
+    }
+    section > div > h3 {
+        font-size: 150%;
     }
     header > section > div > p {
         font-size: 150%;
@@ -245,10 +246,10 @@ footer > div > div > p > a {
         margin: 2%;
         width: 10%;
     }
-    .recommendations {
-        font-size: 100%;
+    .recommendations p {
+        font-size: 150%;
     }
-    .recommendations > img {
+    .recommendations img {
         margin: 1%;
         width: 15%;
     }
